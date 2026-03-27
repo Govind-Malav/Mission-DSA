@@ -15,7 +15,6 @@ int largest_digit(int n)
     }
     return largest;
 }
-
 int main()
 {
     int n;
