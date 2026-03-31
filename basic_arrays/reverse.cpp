@@ -11,6 +11,18 @@ void reversearray(int arr[], int n){
         cout<<arr[i]<<" ";
     }
 }
+
+//less time complexity 
+void reverse(int arr[], int n){
+    int left =0;
+    int right = n-1;
+    while(left<right){
+        swap(arr[left],arr[right]);
+        left ++;
+        right --;
+    }
+}
+
 int main(){
     int n;
     cin>>n;
@@ -18,5 +30,9 @@ int main(){
     for(int i=0; i<n; i++){
         cin>>arr[i];
     }
-    reversearray(arr,n);
+    reverse(arr,n);
+
+    for(int i=0; i<n; i++){
+        cout<<arr[i]<<" ";
+    }
 }
